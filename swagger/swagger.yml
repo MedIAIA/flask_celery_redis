@@ -1,0 +1,30 @@
+swagger: '2.0'
+info:
+  title: Celery API
+  version: '1.0'
+basePath: /api/v1
+schemes:
+  - http
+paths:
+  /add/{x}/{y}:
+    get:
+      operationId: add
+      parameters:
+        - name: x
+          in: path
+          type: integer
+          required: true
+        - name: y
+          in: path
+          type: integer
+          required: true
+      responses:
+        '200':
+          description: Successful operation
+          schema:
+            type: object
+            properties:
+              task_id:
+                type: string
+              status:
+                type: string
