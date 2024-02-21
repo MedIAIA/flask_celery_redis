@@ -5,7 +5,7 @@ __pycache__/
 *.pyd
 *.pyz
 *.pyw
-
+*.rdb
 # Virtual Environment
 venv/
 env/
